@@ -1,0 +1,14 @@
+What is the difference between an MCP client and an MCP server?
+An MCP client is a tool or application consuming an MCP server (like Claude Desktop, VS Code, Tome), while an MCP server hosts the AI models and provides services for these clients to interact with.
+
+What factors are important when running AI models locally?
+RAM and GPU VRAM are critical factors. Running large models on computers with limited resources can result in models not working or running extremely slowly. The amount of RAM and VRAM determines which models can be run and their performance.
+
+What do the billions of parameters in AI model names represent?
+Billions of parameters roughly translate to the model's complexity and capability, but they are not a precise measure of intelligence. Models within the same series can be compared, but comparing across different model series is not straightforward.
+
+What is Ollama and what does it do?
+Ollama is a tool for managing and running AI models locally. It allows users to install, list, and run various AI models on their computer, making it easy to work with different AI models without complex setup.
+
+What is a key consideration when choosing an AI model for tool calling?
+Not all models support tool calling. Users must choose a model that specifically supports tool calling capabilities, and there are specific lists of models that are compatible with this functionality.

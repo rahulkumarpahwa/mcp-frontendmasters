@@ -1,0 +1,17 @@
+What are the three current ways to create an MCP server?
+Standard IO way, 2. SSE (Server-Sent Events) way, 3. Streamable HTTP way
+
+What is standard IO in the context of Linux processes?
+Standard IO is how input is passed into a Linux process, how output comes out of a process, and how errors are shown. It involves passing messages into a process and getting information back out.
+
+What package is used for type validation in the MCP server example?
+Zod is used for defining and validating types, ensuring that data meets specific type requirements
+
+What is the difference between an MCP server using standard IO and a web server?
+An MCP server passes messages into a process and gets information back via Linux piping, whereas a web server uses HTTP client connections that send a message and then disconnect
+
+What are the key import statements required when setting up an MCP server?
+import McpServer from '@modelcontextprotocol/sdk/server/mcp.js'
+import { StdIoServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
+import { z } from 'zod'
+

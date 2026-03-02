@@ -1,0 +1,15 @@
+What is the purpose of the input schema when registering a tool in an MCP server?
+The input schema defines the expected input types for the tool, using Zod to specify the data types (such as Z number for numeric inputs). This helps the AI understand what kind of data the tool requires to function correctly.
+
+
+How does an MCP server help address inconsistencies with Large Language Models (LLMs)?
+MCP servers allow for deterministic tool creation with specific inputs and outputs, which prevents LLMs from making unpredictable or unintended decisions by providing precise, controlled functions with clear descriptions and schemas.
+
+What key components are needed when registering a tool in an MCP server?
+When registering a tool, you need to provide a title, description, input schema (defining input types), and an async function that performs the specific task with the given inputs.
+
+How does an LLM decide whether to use a specific tool in an MCP server?
+The LLM uses the tool's description to determine if the tool is appropriate for the current task. The description provides hints about the tool's functionality and when it should be used.
+
+What is the recommended approach for writing a tool description in an MCP server?
+The description should be concise and provide enough context for the LLM to understand the tool's purpose without being overly detailed, which could potentially cause the LLM to hallucinate or misinterpret the instructions.
