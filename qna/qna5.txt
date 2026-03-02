@@ -1,0 +1,16 @@
+What is a transport in the context of MCP server?
+A transport is a method of managing messaging, such as standard IO, streaming HTTP, or SSE, which defines how communication is handled between the server and client.
+
+
+What version of JSON RPC is MCP based on?
+MCP is based on JSON RPC 2.0, which has been in use since 2009.
+
+
+What does RPC stand for in JSON RPC?
+RPC stands for Remote Procedure Call, which involves telling a remote system to run a specific function using provided parameters.
+
+What are the key differences between RPC and REST?
+REST focuses on resources in the cloud, while RPC is centered on executing specific actions with given parameters, without primarily dealing with resources.
+
+What are the required components when making a JSON RPC 2.0 call?
+A JSON RPC 2.0 call requires jsonrpc version, an ID to identify the client/command, a method name, and optional parameters.
