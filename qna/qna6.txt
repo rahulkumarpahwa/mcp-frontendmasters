@@ -1,0 +1,21 @@
+How do you add an MCP server to Claude Desktop?
+Open Settings panel, go to Developer, click Edit Config, add a server with the full path to the node binary, the full path to mcp.js, and optionally add an environment variable to suppress deprecation warnings
+
+What is the purpose of adding an environment variable when configuring an MCP server in Claude Desktop?
+To suppress Node.js deprecation warnings that would otherwise be passed to the AI agent, which might confuse the agent or disrupt its processing
+
+What steps are required after configuring an MCP server in Claude Desktop?
+Completely quit and reopen Claude Desktop for the new server configuration to take effect
+
+In which other programming languages can MCP servers be written?
+MCP servers can be written in multiple languages including Python (with Fast MCP being recommended), JavaScript, and potentially Go
+
+How rigid are the JSON-RPC responses in MCP servers?
+The client-side parsing is very strict, but the LLM can often handle minor variations or typos in the response, with the client being less tolerant of structural errors
+
+
+What command can you use to find the full path to the Node binary?
+which node
+
+What environment variable setting suppresses Node.js deprecation warnings?
+NODE_OPTIONS=--no-deprecation

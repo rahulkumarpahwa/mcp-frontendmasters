@@ -106,3 +106,33 @@ await server.connect(transport);
  *
  * echo '{"jsonrpc": "2.0", "id": 1, "method": "initialize", "params": {"protocolVersion": "2024-11-05", "capabilities": {}, "clientInfo": {"name": "test-client", "version": "1.0.0"}}}' | node mcp.js | jq
  */
+
+// Now, we have the mcp server but we haven't used this locally with AI yet.
+// go to claude>settings > developer> edit config.
+// open the claude desktop config json file and add the config like :
+
+/**
+ * {
+ * "mcpServers": {
+    "demo-server": {
+      "command": "C:\\Program Files\\nodejs\\node.exe",
+      "args": [
+        "C:\\Programming\\projects\\mcp-frontendmasters\\mcp.js"
+      ],
+      "env": {
+        "NODE_OPTIONS": "--no-deprecation"
+      }
+    }
+  }
+}
+ */
+
+// now save and close the claude and re open it.
+// we will find the demo mcp server in the same settings and in the connectors under the + button.
+
+// similarly to setup in the tome, we will use the llama3.1 model and under the mcp we will add the server in which in the command we will pass as :
+// node C:\\Programming\\projects\\mcp-frontendmasters\\mcp.js
+// and then save it.
+
+// now, we can the question in the chat in both claude and tome to add the two numbers using the add-server tool.
+// and they will work and give us the result.
