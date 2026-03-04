@@ -1,0 +1,14 @@
+What is the purpose of the 'temperature' parameter when invoking an LLM?
+The temperature parameter controls the level of randomness or variance in the LLM's responses. A temperature of 1 means it will always choose the best result with no variance, while a temperature around 0.8 introduces some variability in responses.
+
+What is the recommended maximum number of tools that an LLM like Claude can effectively handle?
+Currently, Claude can effectively handle around 40 tools before performance starts to degrade. Beyond this number, the LLM's ability to choose and use tools becomes less reliable.
+
+Why should you minimize the number of tools exposed to an LLM?
+Exposing too many tools can cause confusion for the LLM, waste input tokens, and potentially lead to poor tool selection or performance. It's recommended to only expose tools that will be actively used.
+
+How can you guide an LLM to use specific tools in certain scenarios?
+You can use system prompts or instructions that explicitly direct the LLM to use specific tools or MCP servers for certain tasks, such as 'please use Context7 to get up-to-date documentation' or 'do not write migrations yourself, use Drizzle'.
+
+What is an LLM's default behavior when it has multiple tools for a similar task?
+When an LLM has multiple tools for a similar task, it may become confused, potentially try to use both tools, or choose one arbitrarily, which can lead to suboptimal or inconsistent results.
