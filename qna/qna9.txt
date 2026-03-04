@@ -1,0 +1,15 @@
+What is the key difference between a resource and a tool in the context of LLM interactions?
+A resource is a user-driven method of providing additional static context to an LLM, while a tool is an LLM-initiated method of fetching additional information or capabilities.
+
+What is a characteristic of static resources in LLM interactions?
+Static resources are fixed and cannot be dynamically modified. They provide a single, unchanging piece of context to the LLM.
+
+How might RAG (Retrieval Augmented Generation) be implemented with resources or tools?
+RAG can be implemented with tools by searching a vector-based database and fetching related context, or with resources by providing pre-selected vector search databases directly to the LLM.
+
+What is the fundamental difference between pushing and pulling information in LLM interactions?
+Pushing (resources) involves directly providing context to the LLM, while pulling (tools) allows the LLM to independently fetch additional information or capabilities as needed.
+
+What limitation currently exists with static resources in LLM interactions?
+Static resources can currently only provide one fixed piece of context without the ability to customize or parameterize the response.
+
