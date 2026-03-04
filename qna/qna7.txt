@@ -1,0 +1,16 @@
+What parameters can be retrieved from the OpenMeteo weather API?
+Temperature, humidity, apparent temperature, precipitation, rain, and wind speed (in miles per hour, Fahrenheit, and inches of rain)
+
+How do you install the OpenMeteo SDK?
+Use the npm command npm install openmeteo
+
+
+What is a key advantage of adding an API like OpenMeteo to an LLM?
+It provides real-time data capabilities that were not part of the LLM's original training data, such as current weather information
+
+What geographic coordinate system is required to retrieve weather data from OpenMeteo?
+Latitude and longitude coordinates are required; you cannot query with just one coordinate
+
+How can you create a weather server using OpenMeteo?
+Create a JavaScript file (e.g., weather.js) that uses the OpenMeteo SDK, configures Zod types, and sets up a server to retrieve weather data based on latitude and longitude
+
