@@ -1,0 +1,14 @@
+What is the key difference between a resource and a prompt in the MCP protocol?
+A resource is about handing content to the LLM for interpretation and context, while a prompt is more of a command or instruction for the LLM to perform a specific task.
+
+What are some examples of coding style standards?
+Idiomatic JS and Airbnb standard were mentioned as different ways of writing JavaScript code.
+
+What are some potential use cases for an MCP server with prompts?
+Potential use cases include style checking code, creating coding agents that can fix GitHub issues, providing prescriptive guidelines for repository creation, and setting up automated code review processes.
+
+What modules were imported when creating the style checker MCP server?
+The modules imported were MCP server, standard IO server transport, Zod (z), and readFileSync from the file system (fs).
+
+How can an MCP server be used to improve code review processes?
+An MCP server can be configured to review code against specific style guides, provide detailed feedback, and ensure adherence to predefined coding standards and best practices.
